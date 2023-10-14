@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <title>Calculator</title>
+ </head>
+ <body>
+ <table>
+ <tr>
+ <td>Enter expression: </td>
+ <td> <input type="text" name="n1" value="" id="n1"> </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td style="text-align:center"> 
+    <button type="button" name="button" onclick="calculate()"> Calculate </button>
+</td>
+ </tr>
+ </table>
+ <script type="text/javascript">
+ function calculate() {
+     document.getElementById('n1').value = eval(document.getElementById('n1').value);
+ }
+ </script>
+ </body>
+</html> 
